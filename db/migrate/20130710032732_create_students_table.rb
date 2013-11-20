@@ -1,7 +1,10 @@
 class CreateStudentsTable < ActiveRecord::Migration
   def up
     create_table :students do |t|
-      t.name :string
+      t.string :name
+      t.references :house
+
+      t.timestamps
     end
   end
 
