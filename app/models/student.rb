@@ -1,3 +1,4 @@
-def Student < ActiveREcord::Base
-  attr_accessible :name
+class Student < ActiveRecord::Base
+  attr_accessible :name, :house_id
+  belongs_to :house
 end
