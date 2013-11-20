@@ -1,4 +1,4 @@
-class Houses < ActiveRecord::Base
+class House < ActiveRecord::Base
   attr_accessible :house_name
 
   has_many :students
